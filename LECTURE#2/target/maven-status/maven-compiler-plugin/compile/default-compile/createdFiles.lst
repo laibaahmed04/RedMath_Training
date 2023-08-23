@@ -1,0 +1,5 @@
+com\redmath\news\core\NewsRepository.class
+com\redmath\news\core\NewsController.class
+com\redmath\news\Application.class
+com\redmath\news\core\NewsService.class
+com\redmath\news\core\News.class
