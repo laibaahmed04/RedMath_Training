@@ -29,7 +29,7 @@ public class NewsService {
 //      repository.save(news);
 //
 //        }
-  //  }
+    //  }
 
     public List<News> findAll() {
         return repository.findAll();
@@ -62,6 +62,8 @@ public class NewsService {
         if (optionalNews.isPresent()) {
             News existingNews = optionalNews.get();
             // Update the existingNews object with the data from updatedNews
+
+            existingNews.setTags(updatedNews.getTags());
             existingNews.setTitle(updatedNews.getTitle());
             existingNews.setDetails(updatedNews.getDetails());
 
@@ -70,4 +72,4 @@ public class NewsService {
             return null;
         }
     }
-    }
+}
