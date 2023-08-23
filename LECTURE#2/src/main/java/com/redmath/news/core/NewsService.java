@@ -18,23 +18,9 @@ public class NewsService {
         //this.Createdata();
     }
 
-//    public void Createdata()
-//    {
-//      for(int i=0; i<3 ;i++){
-//      News news = new News();news.setId(Long.valueOf(i));
-//      news.setTitle("Title: "+ news.getId());
-//      news.setDetails("Details: "+ news.getId());
-//      news.setTags("Tags: "+ news.getId());
-//      news.setReportedAt(LocalDateTime.now());
-//      repository.save(news);
-//
-//        }
-    //  }
-
     public List<News> findAll() {
         return repository.findAll();
     }
-
 
     public Optional<News> findById(Long id) {
         return repository.findById(id);
@@ -61,8 +47,6 @@ public class NewsService {
 
         if (optionalNews.isPresent()) {
             News existingNews = optionalNews.get();
-            // Update the existingNews object with the data from updatedNews
-
             existingNews.setTags(updatedNews.getTags());
             existingNews.setTitle(updatedNews.getTitle());
             existingNews.setDetails(updatedNews.getDetails());

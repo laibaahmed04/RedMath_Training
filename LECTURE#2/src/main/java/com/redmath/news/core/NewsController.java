@@ -66,22 +66,4 @@ public class NewsController {
         }
     }
 
-
-
-//    @PostMapping("/{id}")
-//    public ResponseEntity<News> createpost(@RequestBody News news)
-//    {
-//        News created = service.create(news);
-//    }
-//    @PostMapping("/{id}")
-//    public void update(News news) {
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    public void delete(Long id) {
-//    }
-
-
-
-
 }
