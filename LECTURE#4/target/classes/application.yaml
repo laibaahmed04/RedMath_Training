@@ -1,0 +1,38 @@
+logging:
+  level:
+    sql: debug
+    '[com.redmath.news]': debug
+  pattern:
+    level: "%5p ${HOSTNAME}"
+   # console:
+  file:
+    name: target/news.log
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+#    url: ${NEWS_DB_URL}
+#    password: ${NEWS_DB_PASSWORD}
+#    username: ${NEWS_DB_USER}
+     url: ${news.db.url}
+     user: ${news.db.user}
+     password: ${news.db.password}
+#
+#  security:
+#    user:
+#      name: laiba
+#      password: laiba
+#      roles: test
+
+server:
+  port: 9080
+
+spring.profiles.include: dev
+

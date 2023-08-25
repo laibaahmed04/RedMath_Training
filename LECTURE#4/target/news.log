@@ -1,0 +1,523 @@
+2023-08-25T15:33:42.148+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 10624 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:33:42.149+05:00 DEBUG DESKTOP-P4QH9DC 10624 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:33:42.150+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:33:42.987+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:33:43.079+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:33:43.758+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:33:43.960+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:33:43.962+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:33:44.050+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:33:44.650+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.653+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.657+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.660+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.666+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.667+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:33:44.682+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:33:44.687+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.689+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:33:44.691+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.692+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.748+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:33:44.750+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:33:44.753+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:33:44.754+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 8ms
+2023-08-25T15:33:44.759+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.761+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.763+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:33:44.766+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:33:44.767+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 5ms
+2023-08-25T15:33:44.769+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.774+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:33:44.776+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:33:44.779+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:33:44.780+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 8ms
+2023-08-25T15:33:44.781+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.784+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:33:44.786+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:33:44.787+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 5ms
+2023-08-25T15:33:44.789+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.790+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:33:44.792+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:33:44.792+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:33:44.972+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:33:45.054+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:33:45.057+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:33:45.289+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:33:45.446+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:33:45.756+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:33:46.435+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:33:46.439+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:33:46.872+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:33:47.649+05:00  WARN DESKTOP-P4QH9DC 10624 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:33:47.892+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@144caca6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@532782f5, org.springframework.security.web.context.SecurityContextHolderFilter@6442c2dd, org.springframework.security.web.header.HeaderWriterFilter@298f7b0a, org.springframework.security.web.authentication.logout.LogoutFilter@7def08fc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12939937, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48c56b42, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c2d4274, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a10a99b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ebf5bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b8518b, org.springframework.security.web.access.ExceptionTranslationFilter@427c9a13, org.springframework.security.web.access.intercept.AuthorizationFilter@31aec04a]
+2023-08-25T15:33:48.254+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:33:48.388+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:33:48.425+05:00  WARN DESKTOP-P4QH9DC 10624 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:33:48.425+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:33:48.596+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:33:48.597+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:33:48.598+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-08-25T15:33:48.631+05:00  INFO DESKTOP-P4QH9DC 10624 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 7.296 seconds (process running for 8.838)
+2023-08-25T15:33:49.485+05:00 DEBUG DESKTOP-P4QH9DC 10624 --- [main] org.hibernate.SQL                        : select count(*) from news n1_0 where n1_0.id=?
+2023-08-25T15:33:49.503+05:00  WARN DESKTOP-P4QH9DC 10624 --- [main] com.redmath.news.core.NewsService        : News with1Already Exists
+2023-08-25T15:33:49.603+05:00  INFO DESKTOP-P4QH9DC 10624 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:33:49.607+05:00  INFO DESKTOP-P4QH9DC 10624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:33:49.613+05:00  INFO DESKTOP-P4QH9DC 10624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-25T15:37:11.343+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 17200 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:37:11.344+05:00 DEBUG DESKTOP-P4QH9DC 17200 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:37:11.344+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:37:12.128+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:37:12.193+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:37:12.724+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:37:12.937+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:37:12.939+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:37:13.010+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:37:13.604+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.608+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.613+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.617+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.623+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.623+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:37:13.639+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:37:13.642+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.644+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:37:13.647+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.648+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.707+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:37:13.709+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:37:13.711+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:37:13.712+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 10ms
+2023-08-25T15:37:13.717+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.718+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.722+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:37:13.724+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:37:13.725+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 4ms
+2023-08-25T15:37:13.726+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.730+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:37:13.731+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:37:13.737+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:37:13.739+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 11ms
+2023-08-25T15:37:13.742+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.749+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:37:13.756+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:37:13.758+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 12ms
+2023-08-25T15:37:13.759+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.760+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:37:13.762+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:13.763+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:37:13.942+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:37:14.005+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:37:14.009+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:37:14.222+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:37:14.390+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:37:14.646+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:37:15.342+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:37:15.345+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:37:15.840+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:37:16.326+05:00  WARN DESKTOP-P4QH9DC 17200 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:37:16.487+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e5f5ddf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@144caca6, org.springframework.security.web.context.SecurityContextHolderFilter@4ca6f587, org.springframework.security.web.header.HeaderWriterFilter@405d123c, org.springframework.security.web.authentication.logout.LogoutFilter@23bf19c9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7def08fc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@70a81b4e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@532782f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3647b274, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2898cd46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c2d4274, org.springframework.security.web.access.ExceptionTranslationFilter@4fb1bffd, org.springframework.security.web.access.intercept.AuthorizationFilter@4781bb01]
+2023-08-25T15:37:16.835+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:37:16.961+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:37:16.996+05:00  WARN DESKTOP-P4QH9DC 17200 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:37:16.996+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:37:17.082+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:37:17.082+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:37:17.085+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2023-08-25T15:37:17.113+05:00  INFO DESKTOP-P4QH9DC 17200 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 6.219 seconds (process running for 7.371)
+2023-08-25T15:37:17.949+05:00 DEBUG DESKTOP-P4QH9DC 17200 --- [main] org.hibernate.SQL                        : select count(*) from news n1_0 where n1_0.id=?
+2023-08-25T15:37:17.985+05:00 DEBUG DESKTOP-P4QH9DC 17200 --- [main] org.hibernate.SQL                        : select n1_0.id,n1_0.details,n1_0.reported_at,n1_0.tags,n1_0.title from news n1_0 where n1_0.id=?
+2023-08-25T15:37:18.016+05:00 DEBUG DESKTOP-P4QH9DC 17200 --- [main] org.hibernate.SQL                        : insert into news (details,reported_at,tags,title,id) values (?,?,?,?,?)
+2023-08-25T15:37:18.096+05:00  INFO DESKTOP-P4QH9DC 17200 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:37:18.098+05:00  INFO DESKTOP-P4QH9DC 17200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:37:18.101+05:00  INFO DESKTOP-P4QH9DC 17200 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-25T15:37:52.327+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 10356 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:37:52.329+05:00 DEBUG DESKTOP-P4QH9DC 10356 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:37:52.329+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:37:53.412+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:37:53.477+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:37:54.011+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:37:54.236+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:37:54.238+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:37:54.321+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:37:54.873+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.877+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.885+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.889+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.894+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.894+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:37:54.909+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:37:54.913+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.914+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:37:54.918+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.919+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.978+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:37:54.980+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:37:54.983+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:37:54.983+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 8ms
+2023-08-25T15:37:54.989+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.991+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:54.994+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:37:54.996+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:37:54.997+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 5ms
+2023-08-25T15:37:54.998+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:55.003+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:37:55.005+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:37:55.007+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:37:55.008+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 8ms
+2023-08-25T15:37:55.009+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:55.013+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:37:55.015+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:37:55.016+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 4ms
+2023-08-25T15:37:55.018+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:55.019+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:37:55.021+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:37:55.022+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:37:55.136+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:37:55.212+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:37:55.214+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:37:55.403+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:37:55.554+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:37:55.804+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:37:56.472+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:37:56.475+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:37:56.970+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:37:57.507+05:00  WARN DESKTOP-P4QH9DC 10356 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:37:57.689+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ee37c7a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4973dacf, org.springframework.security.web.context.SecurityContextHolderFilter@4f7a2262, org.springframework.security.web.header.HeaderWriterFilter@7def08fc, org.springframework.security.web.authentication.logout.LogoutFilter@511ba9c9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3debeb5e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5e5f5ddf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5cb42eb2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@440309c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63d8590c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d05d022, org.springframework.security.web.access.ExceptionTranslationFilter@4ff233f9, org.springframework.security.web.access.intercept.AuthorizationFilter@4e132a9b]
+2023-08-25T15:37:58.024+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:37:58.154+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:37:58.190+05:00  WARN DESKTOP-P4QH9DC 10356 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:37:58.190+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:37:58.262+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:37:58.264+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:37:58.268+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2023-08-25T15:37:58.297+05:00  INFO DESKTOP-P4QH9DC 10356 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 6.486 seconds (process running for 7.799)
+2023-08-25T15:37:59.152+05:00 DEBUG DESKTOP-P4QH9DC 10356 --- [main] org.hibernate.SQL                        : select count(*) from news n1_0 where n1_0.id=?
+2023-08-25T15:37:59.186+05:00 DEBUG DESKTOP-P4QH9DC 10356 --- [main] org.hibernate.SQL                        : select n1_0.id,n1_0.details,n1_0.reported_at,n1_0.tags,n1_0.title from news n1_0 where n1_0.id=?
+2023-08-25T15:37:59.220+05:00 DEBUG DESKTOP-P4QH9DC 10356 --- [main] org.hibernate.SQL                        : insert into news (details,reported_at,tags,title,id) values (?,?,?,?,?)
+2023-08-25T15:37:59.287+05:00  INFO DESKTOP-P4QH9DC 10356 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:37:59.289+05:00  INFO DESKTOP-P4QH9DC 10356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:37:59.291+05:00  INFO DESKTOP-P4QH9DC 10356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-25T15:39:33.335+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 15140 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:39:33.337+05:00 DEBUG DESKTOP-P4QH9DC 15140 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:39:33.338+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:39:34.219+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:39:34.307+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:39:34.959+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:39:35.295+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:39:35.296+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:39:35.386+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:39:36.208+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.211+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.224+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.228+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.238+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.238+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:39:36.259+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:39:36.264+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.269+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:39:36.272+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.277+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.353+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:39:36.356+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:39:36.358+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:39:36.359+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 11ms
+2023-08-25T15:39:36.365+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.369+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.372+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:39:36.373+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:39:36.375+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 5ms
+2023-08-25T15:39:36.377+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.387+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:39:36.388+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:39:36.391+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:39:36.391+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 12ms
+2023-08-25T15:39:36.393+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.397+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:39:36.399+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:39:36.399+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 5ms
+2023-08-25T15:39:36.403+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.404+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:39:36.407+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:39:36.407+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:39:36.615+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:39:36.709+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:39:36.711+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:39:37.031+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:39:37.261+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:39:37.600+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:39:38.320+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:39:38.324+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:39:38.712+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:39:39.197+05:00  WARN DESKTOP-P4QH9DC 15140 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:39:39.412+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ae5cbb9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f15d346, org.springframework.security.web.context.SecurityContextHolderFilter@23bf19c9, org.springframework.security.web.header.HeaderWriterFilter@7c144349, org.springframework.security.web.csrf.CsrfFilter@4ca6f587, org.springframework.security.web.authentication.logout.LogoutFilter@363751f2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@688884e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@117bfeb8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7fb70e94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12939937, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@440309c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abf9a76, org.springframework.security.web.access.ExceptionTranslationFilter@7cc966a9, org.springframework.security.web.access.intercept.AuthorizationFilter@11c68269]
+2023-08-25T15:39:39.790+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:39:39.945+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:39:39.991+05:00  WARN DESKTOP-P4QH9DC 15140 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:39:39.992+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:39:40.103+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:39:40.104+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:39:40.106+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-08-25T15:39:40.136+05:00  INFO DESKTOP-P4QH9DC 15140 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 7.271 seconds (process running for 8.401)
+2023-08-25T15:39:40.939+05:00 DEBUG DESKTOP-P4QH9DC 15140 --- [main] org.hibernate.SQL                        : select count(*) from news n1_0 where n1_0.id=?
+2023-08-25T15:39:40.990+05:00 DEBUG DESKTOP-P4QH9DC 15140 --- [main] org.hibernate.SQL                        : select n1_0.id,n1_0.details,n1_0.reported_at,n1_0.tags,n1_0.title from news n1_0 where n1_0.id=?
+2023-08-25T15:39:41.024+05:00 DEBUG DESKTOP-P4QH9DC 15140 --- [main] org.hibernate.SQL                        : insert into news (details,reported_at,tags,title,id) values (?,?,?,?,?)
+2023-08-25T15:39:41.136+05:00  INFO DESKTOP-P4QH9DC 15140 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:39:41.138+05:00  INFO DESKTOP-P4QH9DC 15140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:39:41.140+05:00  INFO DESKTOP-P4QH9DC 15140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-25T15:43:42.208+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 13380 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:43:42.209+05:00 DEBUG DESKTOP-P4QH9DC 13380 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:43:42.210+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:43:43.177+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:43:43.257+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:43:43.978+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:43:44.296+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:43:44.298+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:43:44.399+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:43:45.214+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.223+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.230+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.233+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.243+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.244+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:43:45.265+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:43:45.272+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.274+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:43:45.279+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.280+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.362+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:43:45.365+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:43:45.372+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:43:45.373+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 14ms
+2023-08-25T15:43:45.377+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.379+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.381+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:43:45.387+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:43:45.389+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 8ms
+2023-08-25T15:43:45.390+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.395+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:43:45.397+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:43:45.402+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:43:45.403+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 11ms
+2023-08-25T15:43:45.406+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.410+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:43:45.411+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:43:45.413+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 4ms
+2023-08-25T15:43:45.416+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.420+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:43:45.426+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:43:45.426+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:43:45.661+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:43:45.774+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:43:45.778+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:43:46.022+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:43:46.199+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:43:46.512+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:43:47.429+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:43:47.433+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:43:47.973+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:43:48.545+05:00  WARN DESKTOP-P4QH9DC 13380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:43:48.881+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23a0c7f3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21b96db, org.springframework.security.web.context.SecurityContextHolderFilter@5beda06e, org.springframework.security.web.header.HeaderWriterFilter@7011eee0, org.springframework.security.web.csrf.CsrfFilter@1a56cb99, org.springframework.security.web.authentication.logout.LogoutFilter@73136174, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34e4a136, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d0fae45, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76a13b12, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46977829, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24eb71f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7475f57e, org.springframework.security.web.access.ExceptionTranslationFilter@18d76c14, org.springframework.security.web.access.intercept.AuthorizationFilter@33224703]
+2023-08-25T15:43:49.448+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:43:49.647+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:43:49.745+05:00  WARN DESKTOP-P4QH9DC 13380 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:43:49.746+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:43:49.847+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:43:49.847+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:43:49.849+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-08-25T15:43:49.881+05:00  INFO DESKTOP-P4QH9DC 13380 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 8.329 seconds (process running for 9.575)
+2023-08-25T15:43:50.973+05:00  INFO DESKTOP-P4QH9DC 13380 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:43:50.975+05:00  INFO DESKTOP-P4QH9DC 13380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:43:50.977+05:00  INFO DESKTOP-P4QH9DC 13380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-25T15:45:15.856+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 18012 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:45:15.857+05:00 DEBUG DESKTOP-P4QH9DC 18012 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:45:15.857+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:45:16.606+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:45:16.674+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:45:17.322+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:45:17.531+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:45:17.533+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:45:17.607+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:45:18.248+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.251+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.256+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.261+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.267+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.268+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:45:18.284+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:45:18.288+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.290+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:45:18.292+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.295+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.360+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:45:18.362+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:45:18.366+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:45:18.367+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 9ms
+2023-08-25T15:45:18.371+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.373+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.376+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:45:18.377+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:45:18.378+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 4ms
+2023-08-25T15:45:18.380+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.385+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:45:18.387+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:45:18.389+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:45:18.390+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 7ms
+2023-08-25T15:45:18.391+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.394+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:45:18.396+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:45:18.397+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 4ms
+2023-08-25T15:45:18.398+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.399+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:45:18.402+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:45:18.402+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:45:18.598+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:45:18.668+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:45:18.671+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:45:18.855+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:45:19.002+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:45:19.249+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:45:19.922+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:45:19.925+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:45:20.305+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:45:20.725+05:00  WARN DESKTOP-P4QH9DC 18012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:45:20.905+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57421e4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a75bad4, org.springframework.security.web.context.SecurityContextHolderFilter@8829ecd, org.springframework.security.web.header.HeaderWriterFilter@75dc995f, org.springframework.security.web.csrf.CsrfFilter@3d7d920b, org.springframework.security.web.authentication.logout.LogoutFilter@1d0fae45, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@596343e7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@bc85538, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77227b1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ba70b3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a72b2c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73136174, org.springframework.security.web.access.ExceptionTranslationFilter@19203ff3, org.springframework.security.web.access.intercept.AuthorizationFilter@44992466]
+2023-08-25T15:45:21.237+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:45:21.381+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:45:21.419+05:00  WARN DESKTOP-P4QH9DC 18012 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:45:21.420+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:45:21.498+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:45:21.499+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:45:21.501+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-08-25T15:45:21.529+05:00  INFO DESKTOP-P4QH9DC 18012 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 6.106 seconds (process running for 7.317)
+2023-08-25T15:45:22.283+05:00  INFO DESKTOP-P4QH9DC 18012 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:45:22.287+05:00  INFO DESKTOP-P4QH9DC 18012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:45:22.295+05:00  INFO DESKTOP-P4QH9DC 18012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-25T15:46:32.045+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 16544 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:46:32.046+05:00 DEBUG DESKTOP-P4QH9DC 16544 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:46:32.047+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:46:32.830+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:46:32.900+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:46:33.465+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:46:33.669+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:46:33.671+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:46:33.743+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:46:34.289+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.292+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.297+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.300+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.307+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.307+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:46:34.322+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:46:34.327+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.328+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:46:34.331+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.332+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.394+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:46:34.396+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:46:34.399+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:46:34.400+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 9ms
+2023-08-25T15:46:34.403+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.405+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.408+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:46:34.410+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:46:34.410+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 4ms
+2023-08-25T15:46:34.412+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.416+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:46:34.418+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:46:34.420+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:46:34.421+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 7ms
+2023-08-25T15:46:34.422+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.426+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:46:34.428+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:46:34.428+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 5ms
+2023-08-25T15:46:34.429+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.431+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:46:34.432+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:46:34.433+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:46:34.559+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:46:34.640+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:46:34.643+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:46:34.822+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:46:34.961+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:46:35.215+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:46:35.895+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:46:35.899+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:46:36.296+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:46:36.715+05:00  WARN DESKTOP-P4QH9DC 16544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:46:36.900+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a75bad4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77227b1f, org.springframework.security.web.context.SecurityContextHolderFilter@1985f8e3, org.springframework.security.web.header.HeaderWriterFilter@51c660c8, org.springframework.security.web.csrf.CsrfFilter@628190ec, org.springframework.security.web.authentication.logout.LogoutFilter@596343e7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b25ce5e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6fc9c0cc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73136174, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a72b2c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@269a37bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34e4a136, org.springframework.security.web.access.ExceptionTranslationFilter@10fa270e, org.springframework.security.web.access.intercept.AuthorizationFilter@55bf08a5]
+2023-08-25T15:46:37.226+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:46:37.373+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:46:37.409+05:00  WARN DESKTOP-P4QH9DC 16544 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:46:37.410+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:46:37.515+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:46:37.516+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:46:37.518+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-08-25T15:46:37.544+05:00  INFO DESKTOP-P4QH9DC 16544 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 5.971 seconds (process running for 7.145)
+2023-08-25T15:46:38.334+05:00  INFO DESKTOP-P4QH9DC 16544 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:46:38.336+05:00  INFO DESKTOP-P4QH9DC 16544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:46:38.339+05:00  INFO DESKTOP-P4QH9DC 16544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-25T15:49:04.945+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] com.redmath.news.NewControllerTest       : Starting NewControllerTest using Java 20.0.2 with PID 15344 (started by laiba.ahmad in D:\New folder\lecture_4)
+2023-08-25T15:49:04.946+05:00 DEBUG DESKTOP-P4QH9DC 15344 --- [main] com.redmath.news.NewControllerTest       : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-25T15:49:04.947+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] com.redmath.news.NewControllerTest       : The following 1 profile is active: "dev"
+2023-08-25T15:49:05.702+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-25T15:49:05.767+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2023-08-25T15:49:06.349+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-25T15:49:06.595+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-25T15:49:06.596+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-25T15:49:06.674+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-25T15:49:07.218+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.221+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.225+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.229+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.234+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.235+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-25T15:49:07.256+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-25T15:49:07.261+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.262+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-25T15:49:07.266+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.268+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.345+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Table News created
+2023-08-25T15:49:07.347+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Primary key added to News (id)
+2023-08-25T15:49:07.352+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Index news_ix_01 created
+2023-08-25T15:49:07.353+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::News team ran successfully in 11ms
+2023-08-25T15:49:07.357+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.359+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.362+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:49:07.364+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : New row inserted into News
+2023-08-25T15:49:07.365+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::News team ran successfully in 5ms
+2023-08-25T15:49:07.369+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.373+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Table users created
+2023-08-25T15:49:07.374+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-25T15:49:07.377+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-25T15:49:07.377+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::news team ran successfully in 7ms
+2023-08-25T15:49:07.379+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.382+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:49:07.385+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-25T15:49:07.386+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 6ms
+2023-08-25T15:49:07.387+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.389+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase                                : Update command completed successfully.
+2023-08-25T15:49:07.391+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-25T15:49:07.391+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-25T15:49:07.554+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-25T15:49:07.622+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-25T15:49:07.625+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-25T15:49:07.806+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:49:07.966+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-25T15:49:08.228+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-25T15:49:08.920+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-25T15:49:08.924+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:49:09.319+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-25T15:49:09.757+05:00  WARN DESKTOP-P4QH9DC 15344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-25T15:49:09.934+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b99e726, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b841396, org.springframework.security.web.context.SecurityContextHolderFilter@3ca43e5d, org.springframework.security.web.header.HeaderWriterFilter@1014c825, org.springframework.security.web.csrf.CsrfFilter@6d5b160, org.springframework.security.web.authentication.logout.LogoutFilter@5576eef4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76629f82, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@51c660c8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@583b177a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33d75081, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@327af731, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d79651d, org.springframework.security.web.access.ExceptionTranslationFilter@56739ee9, org.springframework.security.web.access.intercept.AuthorizationFilter@1d0fae45]
+2023-08-25T15:49:10.264+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-25T15:49:10.406+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-25T15:49:10.447+05:00  WARN DESKTOP-P4QH9DC 15344 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/ver1/news']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-25T15:49:10.447+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/ver1/news']
+2023-08-25T15:49:10.538+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-25T15:49:10.538+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-25T15:49:10.540+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-08-25T15:49:10.566+05:00  INFO DESKTOP-P4QH9DC 15344 --- [main] com.redmath.news.NewControllerTest       : Started NewControllerTest in 6.051 seconds (process running for 7.201)
+2023-08-25T15:49:11.356+05:00  INFO DESKTOP-P4QH9DC 15344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-25T15:49:11.358+05:00  INFO DESKTOP-P4QH9DC 15344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-25T15:49:11.360+05:00  INFO DESKTOP-P4QH9DC 15344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
