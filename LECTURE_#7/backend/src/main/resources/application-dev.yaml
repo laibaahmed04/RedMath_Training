@@ -1,0 +1,9 @@
+#NEWS_DB_URL: jdbc:h2:mem:news
+#NEWS_DB_USER: SA
+#NEWS_DB_PASSWORD:
+#
+news:
+  db:
+    url: jdbc:h2:mem:news
+    user: sa
+    password:
