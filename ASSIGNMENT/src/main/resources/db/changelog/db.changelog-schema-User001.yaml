@@ -1,0 +1,34 @@
+databaseChangeLog:
+- changeSet:
+    id: schema-User
+    author: User team
+    changes:
+    - createTable:
+        tableName: User
+        columns:
+        - column:
+            name: ID
+            type: bigint
+            constraints:
+              nullable: false
+        - column:
+            name: User_Name
+            type: varchar(255)
+        - column:
+            name: Password
+            type: varchar(1000)
+        - column:
+            name: Roles
+            type: varchar(255)
+
+    - addPrimaryKey:
+        tableName: User
+        columnNames: ID
+        constraintName: user_pk
+
+#    - createIndex:
+#        tableName: News
+#        indexName: news_ix_01
+#        columns:
+#        - column:
+#            name: title

@@ -1,0 +1,41 @@
+databaseChangeLog:
+- changeSet:
+    id: data-0.0.1
+    author: Accounts Team
+    changes:
+    - insert:
+        tableName: Account
+        columns:
+        - column:
+            name: Account_ID
+            value: '1'
+        - column:
+            name:  Name
+            value: Ali
+        - column:
+            name: Password
+            value: '{noop}ali'
+        - column:
+            name: Email
+            value: ali@gmail.com
+        - column:
+            name: Address
+            value: Lahore cantt
+    - insert:
+        tableName: Account
+        columns:
+        - column:
+            name: Account_ID
+            value: '2'
+        - column:
+            name: Name
+            value: Faiza
+        - column:
+            name: Password
+            value: '{noop}faiza'
+        - column:
+            name: Email
+            value: faiza23@gmail.com
+        - column:
+            name: Address
+            value: Gulberg 3

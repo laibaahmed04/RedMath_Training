@@ -1,0 +1,48 @@
+databaseChangeLog:
+- changeSet:
+    id: data-0.0.1
+    author: Transaction
+    changes:
+    - insert:
+        tableName: Transaction
+        columns:
+        - column:
+            name: Transaction_ID
+            value: '1'
+        - column:
+              name: Account_ID
+              value: '1'
+        - column:
+            name: Date
+            value: '2000-01-01T12:00:00'
+        - column:
+            name: Description
+            value: Fund Transfer
+        - column:
+            name:  Amount
+            value: '40000'
+        - column:
+            name: Indicator
+            value: No
+
+    - insert:
+        tableName: Transaction
+        columns:
+        - column:
+            name: Transaction_ID
+            value: '2'
+        - column:
+            name: Account_ID
+            value: '1'
+        - column:
+            name: Date
+            value: '2000-01-01T12:00:00'
+        - column:
+            name: Description
+            value: Family Support
+        - column:
+            name:  Amount
+            value: '30000'
+        - column:
+            name:  Indicator
+            value: Yes

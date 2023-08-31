@@ -1,0 +1,48 @@
+databaseChangeLog:
+- changeSet:
+    id: schema-0.0.1
+    author: Transaction team
+    changes:
+    - createTable:
+        tableName: Transaction
+        columns:
+        - column:
+            name: Transaction_ID
+            type: bigint
+            constraints:
+              nullable: false
+        - column:
+              name: Account_ID
+              type: bigint
+        - column:
+            name: Date
+            type: DATETIME
+        - column:
+            name: Description
+            type: varchar(1000)
+        - column:
+            name: Amount
+            type: double
+        - column:
+            name: Indicator
+            type: varchar(255)
+
+    - addPrimaryKey:
+        tableName: Transaction
+        columnNames: Transaction_ID
+        constraintName: transaction_pk
+#
+#    - addForeignKeyConstraint:
+#          baseTableName: Transaction
+#          baseColumnNames: Account_ID
+#          referencedTableName: Account
+#          referencedColumnNames: Account_ID
+#          constraintName: account_transaction_fk
+
+
+#    - createIndex:
+#        tableName: News
+#        indexName: news_ix_01
+#        columns:
+#        - column:
+#            name: title

@@ -1,0 +1,47 @@
+databaseChangeLog:
+- changeSet:
+    id: schema-0.0.1
+    author: Balance team
+    changes:
+    - createTable:
+        tableName: Balance
+        columns:
+        - column:
+            name: Balance_ID
+            type: bigint
+            constraints:
+                nullable: false
+        - column:
+            name: Account_ID
+            type: bigint
+        - column:
+            name: Date
+            type: DATETIME
+        - column:
+            name: Amount
+            type: double
+        - column:
+            name: Indicator
+            type: varchar(255)
+
+    - addPrimaryKey:
+        tableName: Balance
+        columnNames: Balance_ID
+        constraintName: balance_pk
+
+#    - addForeignKeyConstraint:
+#        baseTableName: Balance
+#        baseColumnNames: Account_ID
+#        referencedTableName: Account
+#        referencedColumnNames: Account_ID
+#        constraintName: account_balance_fk
+
+
+
+
+#    - createIndex:
+#        tableName: News
+#        indexName: news_ix_01
+#        columns:
+#        - column:
+#            name: title

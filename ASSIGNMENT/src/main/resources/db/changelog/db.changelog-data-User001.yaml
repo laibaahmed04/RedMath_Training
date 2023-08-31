@@ -1,0 +1,35 @@
+databaseChangeLog:
+- changeSet:
+    id: data-User
+    author: User
+    changes:
+    - insert:
+        tableName: User
+        columns:
+        - column:
+            name: ID
+            value: '1'
+        - column:
+            name:  User_Name
+            value: Laiba
+        - column:
+            name: Password
+            value: '{noop}laiba'
+        - column:
+            name: Roles
+            value: Admin
+    - insert:
+        tableName: User
+        columns:
+        - column:
+            name: ID
+            value: '2'
+        - column:
+            name: User_Name
+            value: Fatima
+        - column:
+            name: Password
+            value: '{noop}fatima'
+        - column:
+            name: Roles
+            value: Account_Holder

@@ -1,0 +1,41 @@
+databaseChangeLog:
+- changeSet:
+    id: schema-account
+    author: Accounts Team
+    changes:
+    - createTable:
+        tableName: Account
+        columns:
+        - column:
+            name: Account_ID
+            type: bigint
+            constraints:
+              nullable: false
+        - column:
+              name: Name
+              type: varchar(255)
+#        - column:
+#            name: User_ID
+#            type: bigint
+        - column:
+            name: Password
+            type: varchar(1000)
+        - column:
+            name: Email
+            type: varchar(255)
+        - column:
+            name: Address
+            type: varchar(1000)
+
+    - addPrimaryKey:
+        tableName: Account
+        columnNames: Account_ID
+        constraintName: Account_pk
+
+#    - addForeignKeyConstraint:
+#        baseTableName: Account
+#        baseColumnNames: User_ID
+#        referencedTableName: User
+#        referencedColumnNames: ID
+#        constraintName: user_account_fk
+
